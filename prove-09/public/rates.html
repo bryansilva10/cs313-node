@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Postal Rate Calculator</title>
+  </head>
+  <body>
+    <form id="form" action="/getRate" method="get">
+      <label for="">
+        Weight (oz)
+      </label>
+      <input
+        id="weight"
+        name="weight"
+        type="number"
+        step="0.01"
+        required="required"
+      />
+      <select id="option" name="option" required="required">
+        <option value="" selected="selected" disabled="disabled"
+          >Select one</option
+        >
+        <option value="stamped">Letters (Stamped)</option>
+        <option value="metered">Letters (Metered)</option>
+        <option value="flats">Large Envelopes (Flats)</option>
+        <option value="retail">First-Class Package Service—Retail</option>
+      </select>
+      <input type="submit" name="form" value="Get Rate" />
+    </form>
+  </body>
+</html>
