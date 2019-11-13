@@ -16,7 +16,7 @@ app.get("/getRate", function(req, res) {
   message = "The rate for this service is $" + rate.toFixed(2);
 
   if (rate == -1) {
-    message = "The data input is invalid - maybe too heavy?";
+    message = "The data input is invalid!";
   }
 
   data = {
