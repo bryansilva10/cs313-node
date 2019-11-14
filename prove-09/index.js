@@ -56,11 +56,10 @@ function calculateRate(req, res) {
       break;
 
     default:
-      res.render("You didn't specify a type");
       break;
   }
 
   const params = { weight: weight, type: type, result: result.toFixed(2) };
 
-  res.render("calculate_Rate", params);
+  res.render("calculate_rate", params);
 }
