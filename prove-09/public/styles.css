@@ -1,0 +1,23 @@
+html,
+body {
+  background-color: rgb(39, 27, 27);
+}
+
+.header {
+  background-color: rgb(47, 141, 47);
+  padding: 3em;
+  color: white;
+}
+
+.form-container {
+  margin-top: 10rem;
+}
+
+.btn-container {
+  margin-top: 5rem;
+  width: 50%;
+}
+
+label {
+  color: white;
+}
