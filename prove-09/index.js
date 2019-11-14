@@ -10,6 +10,7 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) => res.sendFile(__dirname + "/public/rates.html"));
 
 //DO /GETRATE ROUTE HERE
+app.get("/getRate", (req, res) => res.render("calculate_rate"));
 
 app.listen(PORT, function() {
   console.log(`Running on ${PORT}`);
