@@ -13,14 +13,16 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="d-flex justify-content-center vh-100 align-items-center">
-    <div
-      class="jumbotron d-flex flex-column justify-content-center vh-50 vw-50"
-    >
-      <h1>Postal Rate Calculator</h1>
-      <h3>For a weight oz type</h3>
-      <h3>Your total is: $result</h3>
+  <body>
+    <div class="header container text-center">
+      <h1>Calculator Result</h1>
+    </div>
+
+    <div class="form-container container text-center">
+      <h3>A <%=weight%> oz <%=type%> would cost you:</h3>
+      <h3>$<%=result%></h3>
     </div>
   </body>
 </html>
